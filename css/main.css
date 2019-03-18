@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+}
+
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+  color: #808080;
+}
+
+.nav {
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__item a {
+text-decoration: none;
+}
+
+.nav a {
+  padding: 10px 0;
+  display: block;
+}
+
+.nav a:hover {
+  background-color: #58e1c1;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.img--logo {
+  display: block;
+  margin: 0 auto;
+  padding: 40px 0 10px 0;
+}
+
+
+.headline--secondary {
+  font-weight: 200;
+  margin: 20px 0;
+}
+
+.headline--primary  {
+color:  #58e1c1;
+line-height: 1.2em;
+margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #51ddfc;
+  font-weight: 700;
+}
+
+.blockquote {
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.2em;
+  border-left: 8px solid #58e1c1;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.img--avatar {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  display: block;
+  width: 95%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #58e1c1;
+  margin: 30px auto;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+
+.btn--default {
+  display: block;
+  width: 100%;
+  background-color: #51ddfc;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  border: none;
+}
+
+.img--frame {
+  width: 100%;
+  border: 1px solid #58e1c1;
+  padding: 12px;
+}
+
+.headline--secondary {
+  margin: 50px 0 ;
+}
+
+
+.theme__colors {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #51ddfc;
+  color: #fff;
+  margin: 6px 0;
+  padding: 12px 0 12px 15px ;
+}
+
+.btn--success, .btn--error, .btn--warning, .btn--info  {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 12px 0;
+}
+
+
+
+
+.grid__row {
+  margin: 25px 0;
+}
+
+.btn--success {
+  background-color: #63cc82;
+}
+
+.btn--error {
+  background-color: #e4757a;
+}
+
+.btn--warning {
+  background-color: #fd7856;
+}
+
+.btn--info {
+  background-color: #927bc1;
+}
+
+.grid__row .theme__colors.grid__col--12  {
+    background-color: #80e8d1;
+}
+
+.grid__row .theme__colors.grid__col--6  {
+    background-color: #3fabca;
+}
+
+.grid__row .theme__colors.grid__col--4  {
+    background-color: #7ee6fd;
+}
+
+.grid__row .theme__colors.grid__col--3  {
+    background-color: #deb2ee;
+}
+
+.grid__row .theme__colors.grid__col--5  {
+    background-color: #88d9a0;
+}
+
+.grid__row .theme__colors.grid__col--7  {
+    background-color: #ec9fa3;
+}
+
+.grid__row .theme__colors.grid__col--8  {
+    background-color: #fd9f85;
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+.grid__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav  {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.img--logo {
+  padding: 20px 0 10px 0;
+}
+
+.nav a {
+  padding: 10px 20px;
+}
+
+
+
+.grid__col--12 {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+ .grid__col--8 {
+  width: 66.6%;
+}
+
+.grid__col--6 {
+  width: 50%;
+}
+
+.grid__col--4 {
+  width: 33.3%;
+}
+
+.grid__col--5 {
+  width: 41.6%;
+}
+
+.grid__col--7 {
+  width: 58.3%;
+}
+
+.theme__colors {
+  margin: 0 10px;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.headline--secondary {
+  margin: 0;
+}
+
+.grid__col--8 {
+  padding-right: 20px;
+}
+
+.img--avatar {
+  padding: 0;
+  width: 50%;
+  margin-top: 10px;
+}
+
+}
+
+
+
+
+// **********************************************
+// _grid.scss
+// styles related to the grid system and
+// main container.
+// major grid styles have been added here for you
+// but additional styling may be needed
+// **********************************************
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+body {
+  @include main-type;
+}
+
+.img--logo {
+  @include center;
+}
+@media (min-width: $mq) {
+  .img--logo {
+    padding: 20px 0 10px 0;
+  }
+}
+
+
+
+.grid__row .theme__colors.grid__col--12  {
+    background-color: #80e8d1;
+}
+
+.grid__row .theme__colors.grid__col--6  {
+    background-color: #3fabca;
+}
+
+.grid__row .theme__colors.grid__col--4  {
+    background-color: #7ee6fd;
+}
+
+.grid__row .theme__colors.grid__col--3  {
+    background-color: #deb2ee;
+}
+
+.grid__row .theme__colors.grid__col--5  {
+    background-color: #88d9a0;
+}
+
+.grid__row .theme__colors.grid__col--7  {
+    background-color: #ec9fa3;
+}
+
+.grid__row .theme__colors.grid__col--8  {
+    background-color: #fd9f85;
+}
+
+
+// grid base class
+.grid {
+
+  // .grid__row
+  &__row {
+    padding: 1em 10px;
+    display: flex;
+    flex-direction: column;
+
+
+
+    // NOTE: replace with media query mixin if aiming for exceeds
+
+
+    @media (min-width: $mq) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  // .grid__col
+  &__col {
+
+    // create grid columns dynamically
+    // loop through each column size
+    @for $i from 1 through 12 {
+
+      // concatenate CSS selector, ie when $i = 1,
+      // selector would be .grid__col--1
+      &--#{$i} {
+
+        // base styles applied to all grid columns
+        // NOTE: could be converted to a placeholder, along with margin
+        // from the  media query
+
+        margin-top: 10px;
+        flex-basis: 100%;
+
+        // NOTE: replace with media query mixin if aiming for exceeds
+        @media (min-width: $mq) {
+
+          // base stlyes applied to all grid columns
+          margin-top: 0;
+
+          // make column width a percentage of the column number / total columns
+          flex-basis: #{$i / 12 * 100 + "%"} ;
+        }
+      }
+    }
+  }
+}
+
+// targets all elements with classes that begin with grid__col
+[class^=grid__col] {
+  // grid__col + grid__col, targets two sibling columns
+  & + & {
+
+    // NOTE: replace with media query mixin if aiming for exceeds
+    @media (min-width: $mq) {
+
+      // add grid gutter
+      margin-left: 10px;
+    }
+  }
+}

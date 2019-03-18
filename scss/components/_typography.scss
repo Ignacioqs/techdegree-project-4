@@ -1,0 +1,28 @@
+.headline--primary {
+  color: $teal;
+  line-height: $line-height2;
+  margin-left: 20px;
+}
+
+
+.headline--secondary {
+  font-weight: $light;
+  margin: 20px 0;
+}
+
+.link {
+  text-decoration: $nounder;
+  color: $lavender;
+  font-weight: 700;
+}
+
+
+.blockquote {
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: $line-height2;
+  border-left: 8px solid $teal;
+  padding-left: 20px;
+  border-radius: 5px;
+
+}

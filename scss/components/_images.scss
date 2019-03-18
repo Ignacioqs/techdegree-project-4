@@ -1,0 +1,10 @@
+.img--avatar {
+  @include center;
+  padding: 20px 0;
+}
+
+.img--frame {
+  width: 100%;
+  border: 1px solid $teal;
+  padding: 12px;
+}

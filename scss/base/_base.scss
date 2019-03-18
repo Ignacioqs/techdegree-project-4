@@ -1,23 +1,10 @@
+// Only use the universal selector, *, ul tag, and p tags in the _base.scss file.
 
-//In the base.scss  file, you can only apply styles to four different elements directly:
-
-//the universal selector (*)
-//ul elements
-//p elements
-//a elements
+* {
+  box-sizing: border-box;
+}
 
 
 ul {
   list-style: none;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  text-align: left;
-  line-height: 1.5em;
-  color: #5a5a5a;
 }

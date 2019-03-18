@@ -1,3 +1,47 @@
-//media queries
+@mixin main-type {
+  font-family: $main-font;
+  font-weight: $light;
+  line-height: $mainline-height;
+  color: $grey;
+}
 
-//flexbox settings
+
+
+
+@mixin navigation {
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  @include flexy($dir:column);
+}
+
+@mixin center {
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin noborders {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+@mixin flexy ($disp: flex,
+              $dir: null,
+              $wrap: null,
+              $just: null) {
+                display: $disp;
+                flex-direction: $dir;
+                flex-wrap: $wrap;
+                justify-content: $just;
+              }
+
+
+
+
+@mixin mq {
+    @media (min-width: $mq){
+      @content
+    };
+  }

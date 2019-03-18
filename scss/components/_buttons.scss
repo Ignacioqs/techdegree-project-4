@@ -1,0 +1,38 @@
+
+
+.theme__colors {
+  @extend %btns;
+  padding-left: 20px;
+}
+
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+@extend %btns;
+text-transform: uppercase;
+margin: 6px 0;
+padding-left: 0;
+@media (min-width: $mq) {
+  margin: 0 6px;
+  }
+}
+
+.btn {
+  &--default {
+  background-color: $lavender;
+  }
+
+  &--success {
+  background-color: $green;
+  }
+
+  &--error {
+    background-color: $red;
+  }
+
+  &--warning {
+    background-color: $orange;
+  }
+
+  &--info {
+  background-color: $purple;
+}
+}
