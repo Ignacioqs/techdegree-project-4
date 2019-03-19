@@ -15,10 +15,7 @@
   @include flexy($dir:column);
 }
 
-@mixin center {
-  display: block;
-  margin: 0 auto;
-}
+
 
 @mixin noborders {
   border-top: none;
@@ -30,11 +27,13 @@
 @mixin flexy ($disp: flex,
               $dir: null,
               $wrap: null,
-              $just: null) {
+              $just: null,
+              $align: null) {
                 display: $disp;
                 flex-direction: $dir;
                 flex-wrap: $wrap;
                 justify-content: $just;
+                align-items: $align;
               }
 
 

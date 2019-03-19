@@ -1,5 +1,5 @@
 .nav {
-  @include navigation;
+  @extend %navigation;
     a {
       text-decoration: $nounder;
       display: block;

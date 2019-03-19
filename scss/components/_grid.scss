@@ -30,7 +30,7 @@ body {
 }
 
 .img--logo {
-  @include center;
+  @extend %center;
   @media (min-width: $mq) {
     & {
       padding: 20px 0 10px 0;
@@ -77,7 +77,7 @@ body {
   // .grid__row
   &__row {
     padding: 1em 10px;
-    @include flexy($dir:column);
+    @include flexy($dir:column, $align:stretch);
 
 
 

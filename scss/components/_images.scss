@@ -1,5 +1,5 @@
 .img--avatar {
-  @include center;
+  @extend %center;
   padding: 20px 0;
 }
 
