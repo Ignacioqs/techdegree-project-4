@@ -19,12 +19,6 @@
 
 
 
-
-
-
-
-
-
 body {
   @include main-type;
 }
@@ -71,23 +65,15 @@ body {
 }
 
 
-// grid base class
 .grid {
 
-  // .grid__row
+
   &__row {
     padding: 1em 10px;
     @include flexy($dir:column, $align:stretch);
 
-
-
     @media (min-width: $mq) {
       @include flexy($dir:row);
-
-
-
-
-
 
     }
   }
@@ -107,9 +93,8 @@ body {
   }
 }
 
-// targets all elements with classes that begin with grid__col
 [class^=grid__col] {
-  // grid__col + grid__col, targets two sibling columns
+  
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
