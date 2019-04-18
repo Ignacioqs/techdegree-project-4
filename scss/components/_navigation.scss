@@ -14,7 +14,7 @@
 }
 
 
-@media (min-width: $mq) {
+@include mq {
 .nav {
   @include flexy($dir: row);
   margin-top: 40px;

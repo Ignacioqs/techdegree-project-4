@@ -10,10 +10,13 @@
 text-transform: uppercase;
 margin: 6px 0;
 padding-left: 0;
-@media (min-width: $mq) {
-  margin: 0 6px;
-  }
+@include mq {
+    margin: 0 6px;
 }
+}
+
+
+
 
 .btn {
   &--default {
