@@ -1,10 +1,4 @@
-// **********************************************
-// _grid.scss
-// styles related to the grid system and
-// main container.
-// major grid styles have been added here for you
-// but additional styling may be needed
-// **********************************************
+
 
 .container {
   width: 90%;
@@ -16,7 +10,6 @@
 .grid__col--12 {
   @include flexy($dir:column);
 }
-
 
 
 body {
@@ -31,8 +24,6 @@ body {
     }
   }
 }
-
-
 
 
 
@@ -67,7 +58,6 @@ body {
 
 .grid {
 
-
   &__row {
     padding: 1em 10px;
     @include flexy($dir:column, $align:stretch);
@@ -75,11 +65,6 @@ body {
         @include flexy($dir:row);
     }
   }
-
-
-
-
-
 
   &__col {
     @for $i from 1 through 12 {
@@ -99,18 +84,10 @@ body {
 
 
 
-
-
-
-
 [class^=grid__col] {
 
   & + & {
-
-    // NOTE: replace with media query mixin if aiming for exceeds
     @include mq {
-
-      // add grid gutter
       margin-left: 10px;
     }
   }

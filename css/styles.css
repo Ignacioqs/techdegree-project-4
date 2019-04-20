@@ -578,17 +578,6 @@ body {
   padding-left: 20px;
 }
 
-.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-  text-transform: uppercase;
-  margin: 6px 0;
-  padding-left: 0;
-}
-@media (min-width: 768px) {
-  .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-    margin: 0 6px;
-  }
-}
-
 .btn--default {
   background-color: #51ddfc;
 }
@@ -604,9 +593,15 @@ body {
 .btn--info {
   background-color: #927bc1;
 }
-
-.form__label--hidden {
-  display: none;
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  text-transform: uppercase;
+  margin: 6px 0;
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+    margin: 0 6px;
+  }
 }
 
 .form__input {
@@ -619,11 +614,13 @@ body {
   margin: 30px auto;
   padding: 0 0 15px 15px;
 }
+.form__label--hidden {
+  display: none;
+}
 
 .img--avatar {
   padding: 20px 0;
 }
-
 .img--frame {
   width: 100%;
   border: 1px solid #58e1c1;
@@ -656,7 +653,6 @@ body {
   line-height: 1.2em;
   margin-left: 20px;
 }
-
 .headline--secondary {
   font-weight: 200;
   margin: 20px 0;

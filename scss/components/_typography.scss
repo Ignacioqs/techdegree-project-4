@@ -1,14 +1,18 @@
-.headline--primary {
-  color: $teal;
-  line-height: $line-height2;
-  margin-left: 20px;
+
+.headline {
+
+  &--primary {
+    color: $teal;
+    line-height: $line-height2;
+    margin-left: 20px;
+  }
+
+  &--secondary {
+    font-weight: $light;
+    margin: 20px 0;
+  }
 }
 
-
-.headline--secondary {
-  font-weight: $light;
-  margin: 20px 0;
-}
 
 .link {
   text-decoration: $nounder;
@@ -24,5 +28,4 @@
   border-left: 8px solid $teal;
   padding-left: 20px;
   border-radius: 5px;
-
 }

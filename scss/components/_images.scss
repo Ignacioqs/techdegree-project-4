@@ -1,10 +1,15 @@
-.img--avatar {
-  @extend %center;
-  padding: 20px 0;
-}
 
-.img--frame {
-  width: 100%;
-  border: 1px solid $teal;
-  padding: 12px;
+.img {
+
+  &--avatar {
+    @extend %center;
+    padding: 20px 0;
+  }
+
+  &--frame {
+    width: 100%;
+    border: 1px solid $teal;
+    padding: 12px;
+  }
+
 }
